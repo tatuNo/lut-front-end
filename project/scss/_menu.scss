@@ -1,0 +1,63 @@
+// Desktop menu
+.menu {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  justify-content: space-between;
+
+  &-nav {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  &-name {
+    
+    a {
+      text-decoration: none;
+      font-family: Great Vibes;
+      text-shadow: 4px 4px 4px #aaa;
+      font-size: 2.5rem;
+
+      &:hover {
+        color: $secondary-color;
+        @include easeOut;
+      }
+    }
+  }
+
+  &-some {
+  
+    a {
+      color: #fff;
+      padding: 0 1rem;
+      text-decoration: none;
+
+      &:hover {
+        color: $secondary-color;
+        @include easeOut;
+      }
+    }
+  }
+
+  .nav-item {
+    display: inline;
+
+    &.current > a {
+      color: $secondary-color;
+    }
+
+    a {
+      &:hover {
+        color: $secondary-color;
+        @include easeOut;
+      }
+    }
+  }
+
+  .nav-link {
+    color: #fff;
+    padding: 0 1rem;
+    text-underline-offset: 0.5rem;
+  }
+}
