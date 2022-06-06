@@ -2,8 +2,10 @@
 .menu {
   display: flex;
   align-items: center;
-  font-size: 2rem;
-  justify-content: space-between;
+  font-size: 1rem;
+  justify-content: center;
+  background: darken($primary-color, 10);
+  height: 60px;
 
   &-nav {
     list-style-type: none;
@@ -11,39 +13,10 @@
     margin: 0;
   }
 
-  &-name {
-    
-    a {
-      text-decoration: none;
-      font-family: Great Vibes;
-      text-shadow: 4px 4px 4px #aaa;
-      font-size: 2.5rem;
-
-      &:hover {
-        color: $secondary-color;
-        @include easeOut;
-      }
-    }
-  }
-
-  &-some {
-  
-    a {
-      color: #fff;
-      padding: 0 1rem;
-      text-decoration: none;
-
-      &:hover {
-        color: $secondary-color;
-        @include easeOut;
-      }
-    }
-  }
-
   .nav-item {
     display: inline;
 
-    &.current > a {
+    &.current>a {
       color: $secondary-color;
     }
 
@@ -58,12 +31,16 @@
   .nav-link {
     color: #fff;
     padding: 0 1rem;
-    text-underline-offset: 0.5rem;
+    text-decoration: none;
   }
 }
 
-// Mobile menu 1420
-@media (max-width: 1420px) {
+// Mobile menu
+@media (max-width: 445px) {
+  main {
+    min-height: calc(100vh - 60px) !important; 
+  }
+  
   .menu {
     display: flex;
     flex-direction: column;
@@ -83,11 +60,11 @@
       justify-content: center;
       align-items: center;
     }
-  
+
     &.show {
       visibility: visible;
     }
-    
+
     .nav-item {
       display: block;
       padding: 0.5rem 0;
@@ -102,7 +79,7 @@
     top: 35px;
     cursor: pointer;
     @include easeOut;
-  
+
     .btn-line {
       width: 28px;
       height: 3px;
@@ -110,20 +87,23 @@
       background: #fff;
       @include easeOut;
     }
-  
+
     // Rotate into X with menu lines
     &.close {
       transform: rotate(180deg);
-  
+
       .btn-line {
+
         // Line 1 - rotate
         &:nth-child(1) {
           transform: rotate(45deg) translate(5px, 5px);
         }
+
         // Line 2 - hide
         &:nth-child(2) {
           opacity: 0;
         }
+
         // Line 3 - rotate
         &:nth-child(3) {
           transform: rotate(-45deg) translate(7px, -6px);

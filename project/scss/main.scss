@@ -13,3 +13,31 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5;
 }
+
+main {
+  padding: 4rem;
+  min-height: calc(100vh - 60px - 60px);
+}
+
+#main-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background: darken($primary-color, 10);
+  height: 60px;
+
+
+  .footer-some {
+    a {
+      color: #fff;
+      padding: 0 1rem;
+      text-decoration: none;
+  
+      &:hover {
+        color: $secondary-color;
+        @include easeOut;
+      }
+    }
+  }
+}
