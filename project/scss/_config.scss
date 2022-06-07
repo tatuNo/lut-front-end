@@ -5,3 +5,12 @@ $tertiary-color: #5bccf6;
 @mixin easeOut {
   transition: all 0.5s ease-out;
 }
+
+// Set text color
+@function set-text-color($color) {
+  @if(lightness($color) > 40) {
+    @return #000;
+  } @else {
+    @return #fff;
+  }
+}

@@ -1,0 +1,23 @@
+.home {
+  display: grid;
+  grid-template-areas: 'left right';
+
+  .home-left {
+    grid-area: left;
+    justify-self: center;
+    align-self: center;
+  }
+
+  .home-right {
+    grid-area: right;
+    justify-self: center;
+    align-self: center;
+  }
+
+  .portrait {
+    width: 400px;
+    height: 574px;
+    background: url('../img/portrait.jpg');
+    border: solid 3px $secondary-color;
+  }
+}
