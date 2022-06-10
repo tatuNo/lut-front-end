@@ -1,0 +1,47 @@
+.about {
+  padding: 3rem;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-areas: 
+  'bioimage bio bio bio'
+  'logo-wrapper logo-wrapper logo-wrapper logo-wrapper';
+
+  .bio-image {
+    grid-area: bioimage;
+    width: 275px;
+    height: 275px;
+    border: solid 3px $secondary-color;
+  }
+
+  .bio {
+    grid-area: bio;
+  }
+}
+
+.moving-logos-inner {
+  background: url('../img/logos.png') 0/contain repeat-x;
+  height: 200px;
+  width: 5000px;
+  -webkit-animation: moving-logos 15s linear infinite;
+  animation: moving-logos 15s linear infinite;
+}
+
+.moving-logos-wrapper {
+  max-width: 75%;
+  overflow: hidden;
+  margin: auto;
+  grid-area: logo-wrapper;
+}
+
+@keyframes moving-logos {
+  0% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+  100% {
+    -webkit-transform: translate3d(-70%, 0, 0);
+    transform: translate3d(-70%, 0, 0);
+  }
+}
