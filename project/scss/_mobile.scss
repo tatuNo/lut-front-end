@@ -10,6 +10,13 @@
     height: 287px !important;
     background: url('../img/portrait-small.jpg') !important;
   }
+
+  .about-grid {
+    grid-template-areas:
+      'bioimage'
+      'bio'
+      'logo-wrapper';
+  }
 }
 
 // Mobile menu

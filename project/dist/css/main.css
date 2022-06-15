@@ -126,7 +126,9 @@ h3 {
   .portrait {
     width: 200px !important;
     height: 287px !important;
-    background: url("../img/portrait-small.jpg") !important; } }
+    background: url("../img/portrait-small.jpg") !important; }
+  .about-grid {
+    grid-template-areas: 'bioimage' 'bio' 'logo-wrapper'; } }
 
 @media (max-width: 470px) {
   main {
