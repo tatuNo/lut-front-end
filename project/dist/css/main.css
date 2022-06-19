@@ -73,6 +73,113 @@
     -webkit-transform: translate3d(-70%, 0, 0);
     transform: translate3d(-70%, 0, 0); } }
 
+.work {
+  padding: 3rem; }
+
+.projects {
+  display: grid;
+  grid-gap: 0.7rem;
+  grid-template-columns: repeat(3, 1fr); }
+  .projects img {
+    width: 100%;
+    border: 3px #fff solid; }
+    .projects img:hover {
+      opacity: 0.5;
+      border-color: #eece1a;
+      transition: all 0.5s ease-out; }
+  .projects a {
+    text-decoration: none; }
+
+.btn, .btn-dark, .btn-light {
+  display: block;
+  padding: 0.5rem 1rem;
+  border: 0;
+  margin-bottom: 0.3rem; }
+  .btn:hover, .btn-dark:hover, .btn-light:hover {
+    background: #eece1a;
+    color: #000; }
+
+.btn-dark {
+  background: black;
+  color: #fff; }
+
+.btn-light {
+  background: #c4c4c4;
+  color: #333; }
+
+.modal {
+  background: #fff;
+  color: #222;
+  border: 0;
+  border-radius: 0.25rem;
+  width: 60%;
+  overflow: hidden; }
+  .modal h2,
+  .modal p {
+    display: none; }
+    .modal h2.project-info,
+    .modal p.project-info {
+      display: block; }
+
+.modal[open] {
+  animation: fade-in 500ms forwards, slide-up 1000ms forwards; }
+
+.modal[closing] {
+  display: block;
+  pointer-events: none;
+  inset: 0;
+  animation: fade-out 500ms forwards; }
+
+@keyframes fade-in {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes fade-out {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+@keyframes slide-up {
+  0% {
+    transform: translateY(100%); }
+  100% {
+    transform: translateY(0%); } }
+
+.modal-header h2,
+.modal-footer h3 {
+  margin: 0; }
+
+.modal-header {
+  background: black;
+  padding: 15px;
+  color: #fff;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  text-align: center; }
+
+.modal-footer {
+  background: black;
+  padding: 10px;
+  color: #fff;
+  text-align: center;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px; }
+
+.close {
+  color: #ccc;
+  float: right;
+  color: #fff; }
+
+.close:hover,
+.close:focus {
+  color: #eece1a;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.5s ease-out; }
+
 * {
   box-sizing: border-box; }
 
@@ -128,7 +235,9 @@ h3 {
     height: 287px !important;
     background: url("../img/portrait-small.jpg") !important; }
   .about-grid {
-    grid-template-areas: 'bioimage' 'bio' 'logo-wrapper'; } }
+    grid-template-areas: 'bioimage' 'bio' 'logo-wrapper'; }
+  .projects {
+    grid-template-columns: repeat(2, 1fr); } }
 
 @media (max-width: 470px) {
   main {
@@ -177,4 +286,6 @@ h3 {
       .menu-btn.close .btn-line:nth-child(3) {
         transform: rotate(-45deg) translate(7px, -6px); }
   .lg-heading {
-    font-size: 3rem !important; } }
+    font-size: 3rem !important; }
+  .projects {
+    grid-template-columns: 1fr; } }

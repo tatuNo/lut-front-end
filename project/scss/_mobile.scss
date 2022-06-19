@@ -17,9 +17,12 @@
       'bio'
       'logo-wrapper';
   }
+
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
-// Mobile menu
 @media (max-width: 470px) {
   main {
     min-height: calc(100vh - 60px);
@@ -98,5 +101,9 @@
 
   .lg-heading {
     font-size: 3rem !important;
+  }
+
+  .projects {
+    grid-template-columns: 1fr;
   }
 }
