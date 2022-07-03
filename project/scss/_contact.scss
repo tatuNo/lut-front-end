@@ -1,0 +1,51 @@
+.contact {
+  padding: 3rem;
+
+  i {
+    font-size: 300px;
+  }
+}
+
+.contact-container {
+  padding: 5rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 7rem;
+  flex-wrap: wrap;
+  flex: 1;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 600px;
+
+  input {
+    border: 2px solid black;
+    border-radius: 10px;
+    height: 35px;
+  }
+
+  textarea {
+    border: 2px solid black;
+    border-radius: 10px;
+    height: 150px;
+  }
+
+  button {
+    color: white;
+    background: black;
+    border-radius: 10px;
+    height: 35px;
+
+    &:hover {
+      cursor: pointer;
+      background: $secondary-color;
+      color: set-text-color($secondary-color);
+      @include easeOut;
+    }
+  }
+}
+

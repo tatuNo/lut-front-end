@@ -4,6 +4,7 @@
 @import 'about';
 @import 'work';
 @import 'modal';
+@import 'contact';
 
 * {
   box-sizing: border-box;
@@ -63,6 +64,22 @@ h3 {
 
 .text-secondary {
   color: $secondary-color;
+}
+
+input, textarea {
+  font-family: Arial; 
+  color: #333;
+}
+
+textarea::placeholder {
+  font-family: Arial; color: #333;
+  opacity: 0.5;
+}
+
+input::placeholder {
+  font-family: Arial; 
+  color: #333; 
+  opacity: 0.5;
 }
 
 @import 'mobile';

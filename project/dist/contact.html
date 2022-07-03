@@ -41,9 +41,22 @@
     </nav>
   </header>
   
-  <main>
-    <div>
+  <main class="contact">
+    <h1 class="lg-heading">
+      Contact <span class="text-secondary">Me</span>
+    </h1>
+    <h2 class="sm-heading">
+      If you got any questions, send me a message...
+    </h2>
+    <div class="contact-container">
+      <i class="fa-solid fa-envelope-open-text"></i>
 
+      <form class="contact-form">
+        <input type="text" name="name" id="name" placeholder="name" maxlength="50" required>
+        <input type="text" name="email" id="email" placeholder="email" maxlength="50" required>
+        <textarea type="text" name="message" id="message" placeholder="message" maxlength="1000"></textarea>
+        <button>Send</button>
+      </form>
     </div>
   </main>
 

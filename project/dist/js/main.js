@@ -35,16 +35,18 @@ openModal.forEach(m => {
   });
 });
 
-closeBtn.addEventListener("click", () => {
-  modal.setAttribute("closing", "");
-  modal.addEventListener(
-    "animationend",
-    () => {
-      resetModal();
-    },
-    { once: true }
-  );
-});
+if(closeBtn) {
+  closeBtn.addEventListener("click", () => {
+    modal.setAttribute("closing", "");
+    modal.addEventListener(
+      "animationend",
+      () => {
+        resetModal();
+      },
+      { once: true }
+    );
+  });
+}
 
 function outsideClick(e) {
   if (e.target == modal) {
