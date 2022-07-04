@@ -40,7 +40,11 @@
       </ul>
     </nav>
   </header>
-  
+
+  <div class="message">
+    Thank you for your message!
+  </div>
+
   <main class="contact">
     <h1 class="lg-heading">
       Contact <span class="text-secondary">Me</span>
@@ -54,8 +58,8 @@
       <form class="contact-form">
         <input type="text" name="name" id="name" placeholder="name" maxlength="50" required>
         <input type="text" name="email" id="email" placeholder="email" maxlength="50" required>
-        <textarea type="text" name="message" id="message" placeholder="message" maxlength="1000"></textarea>
-        <button>Send</button>
+        <textarea type="text" name="message" id="message" placeholder="message" maxlength="1000" required></textarea>
+        <button class="send" type="submit">Send</button>
       </form>
     </div>
   </main>

@@ -49,3 +49,44 @@
   }
 }
 
+.message {
+  display: none;
+  background: rgb(0, 255, 0);
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  border: none;
+  width: fit-content;
+  height: fit-content;
+  padding: 1rem;
+}
+
+.message[open] {
+  display: block;
+  animation: slide-from-right 1000ms forwards;
+}
+
+.message[closing] {
+  animation: fade-out 500ms forwards;
+}
+
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes slide-from-right {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}

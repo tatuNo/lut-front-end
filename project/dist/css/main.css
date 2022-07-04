@@ -218,6 +218,36 @@
       color: #000;
       transition: all 0.5s ease-out; }
 
+.message {
+  display: none;
+  background: lime;
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  border: none;
+  width: fit-content;
+  height: fit-content;
+  padding: 1rem; }
+
+.message[open] {
+  display: block;
+  animation: slide-from-right 1000ms forwards; }
+
+.message[closing] {
+  animation: fade-out 500ms forwards; }
+
+@keyframes fade-out {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+@keyframes slide-from-right {
+  0% {
+    transform: translateX(100%); }
+  100% {
+    transform: translateX(0%); } }
+
 * {
   box-sizing: border-box; }
 
@@ -260,7 +290,7 @@ h3 {
   h2.sm-heading,
   h3.sm-heading {
     margin-bottom: 2rem;
-    padding: 0.2rem 1rem; }
+    padding: 0.2rem 0; }
 
 .text-secondary {
   color: #eece1a; }

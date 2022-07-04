@@ -66,3 +66,26 @@ function resetModal() {
 }
 
 window.addEventListener("click", outsideClick);
+
+const contactForm = document.querySelector('.contact-form');
+const message = document.querySelector('.message');
+
+if(contactForm) {
+  contactForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+    message.setAttribute("open", "");
+
+    setTimeout(() => {
+     message.setAttribute("closing", "");
+     message.addEventListener(
+       "animationend",
+       () => {
+         message.removeAttribute("closing");
+         message.removeAttribute("open");
+       },
+       { once: true }
+     );
+    }, 5000)
+    contactForm.reset();
+  })
+}
