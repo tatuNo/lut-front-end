@@ -23,8 +23,16 @@ function toggleMenu() {
 }
 
 const modal = document.querySelector(".modal");
-const openModal = document.querySelectorAll("[id^='project-']");
+const openModal = document.querySelectorAll("[id^='project']");
 const closeBtn = document.querySelector(".close");
+
+const ghLinks = {
+  project1: "https://github.com/tatuNo/travelinfo",
+  project2: "https://github.com/tatuNo/ufoAttack",
+  project3: "https://github.com/tatuNo/fitnessCenterSim",
+  project4: "https://github.com/tatuNo/GameEnvironment",
+  project5: "https://github.com/tatuNo/rent_a_car",
+};
 
 openModal.forEach(m => {
   m.addEventListener("click", () => {
@@ -32,6 +40,7 @@ openModal.forEach(m => {
     document.querySelectorAll(`.${m.id}`).forEach(element => {
       element.classList.add("project-info");
     });
+    document.querySelector("#modal-gh").href = ghLinks[m.id];
   });
 });
 

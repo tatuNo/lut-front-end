@@ -79,14 +79,11 @@
 .projects {
   display: grid;
   grid-gap: 0.7rem;
-  grid-template-columns: repeat(3, 1fr); }
+  grid-template-columns: repeat(4, 1fr); }
   .projects img {
     width: 100%;
-    border: 3px #fff solid; }
-    .projects img:hover {
-      opacity: 0.5;
-      border-color: #eece1a;
-      transition: all 0.5s ease-out; }
+    border: 3px #fff solid;
+    cursor: auto; }
   .projects a {
     text-decoration: none; }
 
@@ -112,7 +109,7 @@
   color: #222;
   border: 0;
   border-radius: 0.25rem;
-  width: 60%;
+  width: 25%;
   overflow: hidden; }
   .modal h2,
   .modal p {
