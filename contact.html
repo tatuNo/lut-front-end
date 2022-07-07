@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/main.css">
+  <link href="../node_modules/@fortawesome/fontawesome-free/css/all.css" rel="stylesheet">
+  <title>Contact Me</title>
+</head>
+<body>
+  <header>
+    <div class="menu-btn">
+      <div class="btn-line"></div>
+      <div class="btn-line"></div>
+      <div class="btn-line"></div>
+    </div>
+    <nav class="menu">
+      <ul class="menu-nav">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link">
+            Home
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="about.html" class="nav-link">
+            About Me
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="work.html" class="nav-link">
+            My Work
+          </a>
+        </li>
+        <li class="nav-item current">
+          <a href="contact.html" class="nav-link">
+            Contact
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="message">
+    Thank you for your message!
+  </div>
+
+  <main class="contact">
+    <h1 class="lg-heading">
+      Contact <span class="text-secondary">Me</span>
+    </h1>
+    <h2 class="sm-heading">
+      If you got any questions, send me a message...
+    </h2>
+    <div class="contact-container">
+      <i class="fa-solid fa-envelope-open-text"></i>
+
+      <form class="contact-form">
+        <input type="text" name="name" id="name" placeholder="name" maxlength="50" required>
+        <input type="text" name="email" id="email" placeholder="email" maxlength="50" required>
+        <textarea type="text" name="message" id="message" placeholder="message" maxlength="1000" required></textarea>
+        <button class="send" type="submit">Send</button>
+      </form>
+    </div>
+  </main>
+
+  <footer id="main-footer">
+    <div class="footer-some">
+      <a href="https://twitter.com/tatunord">
+        <i class="fab fa-twitter fa-2x"></i>
+      </a>
+      <a href="#!">
+        <i class="fab fa-facebook fa-2x"></i>
+      </a>
+      <a href="https://linkedin.com/in/tatu-nordstrom">
+        <i class="fab fa-linkedin fa-2x"></i>
+      </a>
+      <a href="https://github.com/tatuNo">
+        <i class="fab fa-github fa-2x"></i>
+      </a>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/main.css">
+  <link href="../node_modules/@fortawesome/fontawesome-free/css/all.css" rel="stylesheet">
+  <title>My Work</title>
+</head>
+<body>
+  <header>
+    <div class="menu-btn">
+      <div class="btn-line"></div>
+      <div class="btn-line"></div>
+      <div class="btn-line"></div>
+    </div>
+    <nav class="menu">
+      <ul class="menu-nav">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link">
+            Home
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="about.html" class="nav-link">
+            About Me
+          </a>
+        </li>
+        <li class="nav-item current">
+          <a href="work.html" class="nav-link">
+            My Work
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="contact.html" class="nav-link">
+            Contact
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main class="work">
+
+    <dialog class="modal">  
+        <div class="modal-header">
+          <i class="close fa-solid fa-xmark"></i>
+          <h2 class="project1">Travel Info</h2>
+          <h2 class="project2">Ufo Attack</h2>
+          <h2 class="project3">Fitness Center Simulator</h2>
+          <h2 class="project4">Game Environment</h2>
+          <h2 class="project5">Rent A Car</h2>
+        </div>
+        <div class="modal-body">
+          <p class="project1">
+            Full stack web project in a group of 3. Web page where users can find information about travel destinations
+            and add & view reviews. I worked on frontend side and created homepage slider & map and search -page. 
+          </p>
+          <p class="project2">
+            Unity game project with C# in a group of 3. 2D shooting game where player target is to destroy flying ufo. 
+            Ufo gets becomes stronger each time it gets destroyed. Player starts with weak weponry and with each destroyed ufo there is 
+            possibility to get stronger weapon. I worked on game logic side, creating logic for shooting, weapon drops etc.
+          </p>
+          <p class="project3">
+            Java desktop application in a group of 2. In a app user can simulate fitness center customer flow. Fitness
+            center has 9 different service point and all of them have special attributes like treating time, capacity etc. User can follow
+            progress of the simulation in a UI created with JavaFX and when the simulation is over user has option to save various 
+            statistics about the simulation in SQL database. I worked on motor of the simulator and creating database connections. 
+          </p>
+          <p class="project4">
+            Java desktop application in a group of 5. Application where users can play single hand poker, chat with other players and view 
+            statistics about their game history & leaderboards. In a poker game user tries to get best possible hand with five cards. After
+            the initial draw user has option to switch as many cards as he likes to. User earns credits based on bet size and the rarity of the final hand. 
+            All the user information, like credits and played games, are saved into SQL database after each game round. Development of the application
+            was done within Scrum -type of project management. I worked on JavaFX of the poker game and poker game logic, like card switching and chaining
+            poker logic to work with UI.
+          </p>
+          <p class="project5">
+            Full stack web project in a group of 2 using <a href="https://www.mongodb.com/mern-stack">MERN stack</a>. In a web page user can add car available for 
+            a rent or view & apply a rent of a car. I worked mainly on the backend of the project.
+          </p>
+        </div>
+        <div class="modal-footer">
+          <a href="#!" class="btn-dark" id="modal-gh">
+            <i class="fab fa-github"></i>
+            Github
+          </a>
+        </div> 
+    </dialog>
+
+    <h1 class="lg-heading">
+      My <span class="text-secondary">Work</span>
+    </h1>
+    <h2 class="sm-heading">
+      Check out some of my projects...
+    </h2>
+    <div class="projects">
+      <div class="item">
+        <a href="#!">
+          <img src="../dist/img/projects/travelinfo.PNG" alt="project">
+        </a>
+        <a href="#!" class="btn-light" id="project1">
+          <i class="fas fa-eye"></i>
+          Project
+        </a>
+        <a href="https://github.com/tatuNo/travelinfo" class="btn-dark">
+          <i class="fab fa-github"></i>
+          Github
+        </a>
+      </div>
+      <div class="item">
+        <a href="#!">
+          <img src="../dist/img/projects/ufoattack.PNG" alt="project">
+        </a>
+        <a href="#!" class="btn-light" id="project2">
+          <i class="fas fa-eye"></i>
+          Project
+        </a>
+        <a href="https://github.com/tatuNo/ufoAttack" class="btn-dark">
+          <i class="fab fa-github"></i>
+          Github
+        </a>
+      </div>
+      <div class="item">
+        <a href="#!">
+          <img src="../dist/img/projects/simulator.PNG" alt="project">
+        </a>
+        <a href="#!" class="btn-light" id="project3">
+          <i class="fas fa-eye"></i>
+          Project
+        </a>
+        <a href="https://github.com/tatuNo/fitnessCenterSim" class="btn-dark">
+          <i class="fab fa-github"></i>
+          Github
+        </a>
+      </div>
+      <div class="item">
+        <a href="#!">
+          <img src="../dist/img/projects/gameE.PNG" alt="project">
+        </a>
+        <a href="#!" class="btn-light" id="project4">
+          <i class="fas fa-eye"></i>
+          Project
+        </a>
+        <a href="https://github.com/tatuNo/GameEnvironment" class="btn-dark">
+          <i class="fab fa-github"></i>
+          Github
+        </a>
+      </div>
+      <div class="item">
+        <a href="#!">
+          <img src="../dist/img/projects/rentcar.PNG" alt="project">
+        </a>
+        <a href="#!" class="btn-light" id="project5">
+          <i class="fas fa-eye"></i>
+          Project
+        </a>
+        <a href="https://github.com/tatuNo/rent_a_car" class="btn-dark">
+          <i class="fab fa-github"></i>
+          Github
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <footer id="main-footer">
+    <div class="footer-some">
+      <a href="https://twitter.com/tatunord">
+        <i class="fab fa-twitter fa-2x"></i>
+      </a>
+      <a href="#!">
+        <i class="fab fa-facebook fa-2x"></i>
+      </a>
+      <a href="https://linkedin.com/in/tatu-nordstrom">
+        <i class="fab fa-linkedin fa-2x"></i>
+      </a>
+      <a href="https://github.com/tatuNo">
+        <i class="fab fa-github fa-2x"></i>
+      </a>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
