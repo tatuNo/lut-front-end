@@ -35,8 +35,8 @@
   }
 
   button {
-    color: white;
-    background: black;
+    color: #fff;
+    background: darken($primary-color, 10);
     border-radius: 10px;
     height: 35px;
 
@@ -51,7 +51,7 @@
 
 .message {
   display: none;
-  background: rgb(0, 255, 0);
+  background: $secondary-color;
   position: fixed;
   right: 15px;
   bottom: 15px;
@@ -59,6 +59,7 @@
   width: fit-content;
   height: fit-content;
   padding: 1rem;
+  border-radius: 10px;
 }
 
 .message[open] {

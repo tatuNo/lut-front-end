@@ -7,11 +7,12 @@
   grid-template-areas: 
   'bioimage bio bio bio'
   'logo-wrapper logo-wrapper logo-wrapper logo-wrapper';
+  gap: 10px;
 
   .bio-image {
     grid-area: bioimage;
-    width: 275px;
-    height: 275px;
+    width: 100%;
+    height: 100%;
     border: solid 3px $secondary-color;
   }
 
