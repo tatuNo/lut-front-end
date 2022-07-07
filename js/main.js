@@ -47,31 +47,32 @@ openModal.forEach(m => {
 if(closeBtn) {
   closeBtn.addEventListener("click", () => {
     modal.setAttribute("closing", "");
-    modal.addEventListener(
-      "animationend",
-      () => {
-        resetModal();
-      },
-      { once: true }
-    );
+    resetModal();
   });
 }
 
 function outsideClick(e) {
   if (e.target == modal) {
+    modal.setAttribute("closing", "");
     resetModal();
   }
 }
 
 function resetModal() {
-  modal.removeAttribute("closing");
+  modal.addEventListener(
+    "animationend",
+    () => {
+      modal.removeAttribute("closing");
 
-  const openProject = document.querySelectorAll(".project-info");
-  openProject.forEach(element => {
-    element.classList.remove("project-info");
-  })
+      const openProject = document.querySelectorAll(".project-info");
+      openProject.forEach(element => {
+        element.classList.remove("project-info");
+      })
 
-  modal.close();
+    modal.close();
+    },
+    { once: true }
+  );
 }
 
 window.addEventListener("click", outsideClick);
